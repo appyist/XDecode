@@ -17,6 +17,7 @@ struct Recipe: Codable {
     
     var id: String
     var image: URL
+    var name: String
     var categories: [String]
     var servings: Int
     var cookTime: Int
@@ -24,6 +25,6 @@ struct Recipe: Codable {
     var ingredients: [Ingredient]
     
     enum CodingKeys: String, CodingKey {
-        case id, image, categories, servings, cookTime, difficulty, ingredients
+        case id, image, name, categories, servings, cookTime, difficulty, ingredients
     }
 }
