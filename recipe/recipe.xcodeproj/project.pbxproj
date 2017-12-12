@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52422F1A1FDFE89C0088097D /* TableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52422F191FDFE89C0088097D /* TableHeaderView.xib */; };
+		52730C4A1FDFF87D0029F27A /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52730C491FDFF87D0029F27A /* TableHeaderView.swift */; };
 		52F7CFC11FDC1C3D00FDDEB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7CFC01FDC1C3D00FDDEB0 /* AppDelegate.swift */; };
 		52F7CFC61FDC1C3D00FDDEB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F7CFC41FDC1C3D00FDDEB0 /* Main.storyboard */; };
 		52F7CFC81FDC1C3D00FDDEB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F7CFC71FDC1C3D00FDDEB0 /* Assets.xcassets */; };
@@ -167,6 +169,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		52422F191FDFE89C0088097D /* TableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeaderView.xib; sourceTree = "<group>"; };
+		52730C491FDFF87D0029F27A /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
 		52F7CFBD1FDC1C3D00FDDEB0 /* recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F7CFC01FDC1C3D00FDDEB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52F7CFC51FDC1C3D00FDDEB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -224,6 +228,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52422F181FDFE8760088097D /* TableView Header */ = {
+			isa = PBXGroup;
+			children = (
+				52422F191FDFE89C0088097D /* TableHeaderView.xib */,
+				52730C491FDFF87D0029F27A /* TableHeaderView.swift */,
+			);
+			path = "TableView Header";
+			sourceTree = "<group>";
+		};
 		52F7CFB41FDC1C3D00FDDEB0 = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +378,7 @@
 		6E82BD371FDD853F00B8A417 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				52422F181FDFE8760088097D /* TableView Header */,
 				6E70BF581FDFEB8600048ED4 /* IngredientsFooterView */,
 				6E82BD7A1FDEA3E300B8A417 /* Designable Views */,
 				6E82BD791FDE977400B8A417 /* CollectionHeaderView */,
@@ -599,6 +613,7 @@
 				6E70BF4A1FDFE71F00048ED4 /* NunitoSans-Italic.ttf in Resources */,
 				6E70BF4C1FDFE71F00048ED4 /* NunitoSans-ExtraBoldItalic.ttf in Resources */,
 				6E82BD831FDEC10D00B8A417 /* CollectionHeaderView.xib in Resources */,
+				52422F1A1FDFE89C0088097D /* TableHeaderView.xib in Resources */,
 				6E70BF4D1FDFE71F00048ED4 /* NunitoSans-BoldItalic.ttf in Resources */,
 				6E70BF561FDFE71F00048ED4 /* NunitoSans-ExtraBold.ttf in Resources */,
 				6E82BD7F1FDEA4D900B8A417 /* CollectionSectionHeaderView.xib in Resources */,
@@ -619,6 +634,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52730C4A1FDFF87D0029F27A /* TableHeaderView.swift in Sources */,
 				6E82BD3F1FDD962100B8A417 /* RecipeExploreViewController.swift in Sources */,
 				6E82BD811FDEC04500B8A417 /* CollectionHeaderView.swift in Sources */,
 				6E82BD3B1FDD91EC00B8A417 /* DesignableView.swift in Sources */,
@@ -785,11 +801,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KUTVKVRQ95;
+				DEVELOPMENT_TEAM = A4YW889C9G;
 				INFOPLIST_FILE = "$(SRCROOT)/recipe/Utilities/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ist.appy.recip;
+				PRODUCT_BUNDLE_IDENTIFIER = ist.appy.recipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -804,11 +820,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KUTVKVRQ95;
+				DEVELOPMENT_TEAM = A4YW889C9G;
 				INFOPLIST_FILE = "$(SRCROOT)/recipe/Utilities/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ist.appy.recip;
+				PRODUCT_BUNDLE_IDENTIFIER = ist.appy.recipe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
