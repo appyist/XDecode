@@ -9,7 +9,7 @@
 import UIKit
 
 class RecipeDetailViewController: UIViewController {
-
+    
     // MARK: - UI Elements
     @IBOutlet weak var tableView: UITableView!
     
@@ -25,7 +25,7 @@ class RecipeDetailViewController: UIViewController {
     var directives: [String] {
         return recipe.directives
     }
-
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +50,7 @@ extension RecipeDetailViewController: UITableViewDataSource, UITableViewDelegate
         // Section 0 -> Ingredients
         // Section 1 -> Directives
         // UITableViewAutomaticDimension: Calculated height that fits the content
-        return indexPath.section == 0 ? 60.0 : UITableViewAutomaticDimension
+        return indexPath.section == 0 ? 45.0 : UITableViewAutomaticDimension
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -62,15 +62,65 @@ extension RecipeDetailViewController: UITableViewDataSource, UITableViewDelegate
         if indexPath.section == 0 {
             // Ingredients
             if let ingredientCell = tableView.dequeueReusableCell(withIdentifier: "IngredientCell") as? IngredientTableViewCell {
-                let ingredientToDraw = recipe.ingredients[indexPath.row]
+                // Current ingredient object at index
+                let ingredientToDraw = ingredients[indexPath.row]
                 ingredientCell.fill(with: ingredientToDraw)
                 
                 return ingredientCell
             }
         }else {
             // Directives
+            if let directiveCell = tableView.dequeueReusableCell(withIdentifier: "DirectiveCell") as? DirectiveTableViewCell {
+                // Current directive object at index
+                let directiveToDraw = directives[indexPath.row]
+                directiveCell.fill(with: directiveToDraw)
+                
+                return directiveCell
+            }
         }
         
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        // Ingredients
+        if section == 0 {
+            return IngredientsFooterView()
+        }
+        
+        return nil
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        // Ingredients
+        if section == 0 {
+            return 60.0
+        }
+        
+        return 0.0
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        // Directives
+        if section == 1 {
+            let headerLabel = UILabel()
+            headerLabel.font = UIFont(name: "PlayFairDisplay-Regular", size: 24.0)
+            headerLabel.text = "Preparation"
+            headerLabel.textAlignment = .center
+            headerLabel.backgroundColor = UIColor(red: 252.0/255.0, green: 252.0/255.0, blue: 252.0/255.0, alpha: 1.0)
+            
+            return headerLabel
+        }
+        
+        return nil
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        // Directives
+        if section == 1 {
+            return 100.0
+        }
+        
+        return 0.0
     }
 }

@@ -278,26 +278,22 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fXS-ns-l5Z">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dummy Header" id="tGP-hP-51W">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                </imageView>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IngredientTableViewCell" rowHeight="60" id="Xti-Tt-Djf">
-                                        <rect key="frame" x="0.0" y="378" width="375" height="60"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IngredientCell" rowHeight="45" id="Xti-Tt-Djf" customClass="IngredientTableViewCell" customModule="recipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xti-Tt-Djf" id="gWL-CM-aX2">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banana Puding" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hj1-sG-aV6">
-                                                    <rect key="frame" x="20" y="19.5" width="108" height="22"/>
+                                                    <rect key="frame" x="20" y="11.5" width="108" height="22"/>
                                                     <fontDescription key="fontDescription" name="NunitoSans-Light" family="Nunito Sans" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="470 mL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAz-hn-9x1">
-                                                    <rect key="frame" x="294" y="18" width="61" height="24"/>
+                                                    <rect key="frame" x="294" y="10.5" width="61" height="24"/>
                                                     <fontDescription key="fontDescription" name="PlayfairDisplay-Bold" family="Playfair Display" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -311,22 +307,26 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="Hj1-sG-aV6" id="7xg-NV-6qI"/>
+                                            <outlet property="quantityUnitLabel" destination="qAz-hn-9x1" id="Ctt-28-lqg"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DirectiveTableViewCell" rowHeight="60" id="GvE-su-9cR" customClass="DirectiveTableViewCell" customModule="recipe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="438" width="375" height="60"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DirectiveCell" rowHeight="60" id="GvE-su-9cR" customClass="DirectiveTableViewCell" customModule="recipe" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="73" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GvE-su-9cR" id="ZOA-iH-e4R">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preheat oven to 450F / 230C." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kz3-tZ-WVJ">
-                                                    <rect key="frame" x="20" y="21" width="182.5" height="19.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preheat oven to 450F / 230C." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kz3-tZ-WVJ">
+                                                    <rect key="frame" x="50" y="0.0" width="182.5" height="19.5"/>
                                                     <fontDescription key="fontDescription" name="NunitoSans-Light" family="Nunito Sans" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2jP-kh-LUa" customClass="DesignableView" customModule="recipe" customModuleProvider="target">
-                                                    <rect key="frame" x="20" y="22.5" width="15" height="15"/>
+                                                    <rect key="frame" x="20" y="0.0" width="15" height="15"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="JGz-Xv-9Zy"/>
@@ -344,17 +344,36 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YRD-0w-4FZ">
+                                                    <rect key="frame" x="27.5" y="15" width="0.5" height="45"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="0.5" id="Zxi-Dj-yoc"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="kz3-tZ-WVJ" firstAttribute="centerY" secondItem="ZOA-iH-e4R" secondAttribute="centerY" id="dOs-bF-dFF"/>
+                                                <constraint firstItem="2jP-kh-LUa" firstAttribute="top" secondItem="ZOA-iH-e4R" secondAttribute="top" id="3cE-8a-Ncn"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kz3-tZ-WVJ" secondAttribute="trailing" constant="20" id="4uM-pD-wcN"/>
+                                                <constraint firstItem="YRD-0w-4FZ" firstAttribute="top" secondItem="2jP-kh-LUa" secondAttribute="bottom" id="IQC-TO-B8y"/>
+                                                <constraint firstAttribute="bottom" secondItem="YRD-0w-4FZ" secondAttribute="bottom" id="U5G-rU-5wN"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kz3-tZ-WVJ" secondAttribute="bottom" constant="30" id="deQ-6x-GNp"/>
+                                                <constraint firstItem="kz3-tZ-WVJ" firstAttribute="leading" secondItem="2jP-kh-LUa" secondAttribute="trailing" constant="15" id="dno-vi-q9F"/>
+                                                <constraint firstItem="YRD-0w-4FZ" firstAttribute="centerX" secondItem="2jP-kh-LUa" secondAttribute="centerX" id="lJo-3f-eOF"/>
                                                 <constraint firstItem="2jP-kh-LUa" firstAttribute="leading" secondItem="ZOA-iH-e4R" secondAttribute="leading" constant="20" id="mJf-MK-lU9"/>
-                                                <constraint firstItem="2jP-kh-LUa" firstAttribute="centerY" secondItem="ZOA-iH-e4R" secondAttribute="centerY" id="pFt-tI-BZk"/>
-                                                <constraint firstItem="kz3-tZ-WVJ" firstAttribute="leading" secondItem="ZOA-iH-e4R" secondAttribute="leading" constant="20" id="sLF-ez-ajx"/>
+                                                <constraint firstItem="kz3-tZ-WVJ" firstAttribute="top" secondItem="2jP-kh-LUa" secondAttribute="top" id="plM-cI-ll2"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="kz3-tZ-WVJ" id="pxJ-Es-mYa"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="zBs-Fl-t3d" id="TAA-EI-W1J"/>
+                                    <outlet property="delegate" destination="zBs-Fl-t3d" id="nTI-R4-gQo"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -366,6 +385,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oUc-2g-z4S"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="fXS-ns-l5Z" id="Frk-dn-hmj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3D-Jy-l7P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -392,7 +414,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Dummy Header" width="375" height="490"/>
         <image name="Dummy Recipe1" width="180" height="180"/>
         <image name="Dummy Recipe2" width="140" height="140"/>
         <image name="alarm-clock" width="20" height="21"/>

@@ -8,6 +8,21 @@
 
 import UIKit
 
-class IngredientsFooterView: UIView {
+class IngredientsFooterView: UIView, XibLoadable {
 
+    // MARK: - Life Cycle
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        // Loads designed view from .xib file
+        loadViewFromXib()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        // Loads designed view from .xib file
+        loadViewFromXib()
+    }
+    
 }
