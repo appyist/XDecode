@@ -11,7 +11,7 @@ import Foundation
 struct Ingredient: Codable {
     
     var description: String
-    var quantity: Double
+    var quantity: String
     var unit: String
     
     enum CodingKeys: String, CodingKey {

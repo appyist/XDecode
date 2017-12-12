@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		52422F1A1FDFE89C0088097D /* TableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52422F191FDFE89C0088097D /* TableHeaderView.xib */; };
 		52730C4A1FDFF87D0029F27A /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52730C491FDFF87D0029F27A /* TableHeaderView.swift */; };
+		52730C651FE022380029F27A /* rec.json in Resources */ = {isa = PBXBuildFile; fileRef = 52730C641FE022380029F27A /* rec.json */; };
 		52F7CFC11FDC1C3D00FDDEB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7CFC01FDC1C3D00FDDEB0 /* AppDelegate.swift */; };
 		52F7CFC61FDC1C3D00FDDEB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F7CFC41FDC1C3D00FDDEB0 /* Main.storyboard */; };
 		52F7CFC81FDC1C3D00FDDEB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F7CFC71FDC1C3D00FDDEB0 /* Assets.xcassets */; };
@@ -171,6 +172,7 @@
 /* Begin PBXFileReference section */
 		52422F191FDFE89C0088097D /* TableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeaderView.xib; sourceTree = "<group>"; };
 		52730C491FDFF87D0029F27A /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
+		52730C641FE022380029F27A /* rec.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rec.json; sourceTree = "<group>"; };
 		52F7CFBD1FDC1C3D00FDDEB0 /* recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F7CFC01FDC1C3D00FDDEB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52F7CFC51FDC1C3D00FDDEB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -366,6 +368,7 @@
 		6E82BD361FDD6C9D00B8A417 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				52730C641FE022380029F27A /* rec.json */,
 				6E70BF2D1FDFE69D00048ED4 /* Fonts */,
 				52F7CFC01FDC1C3D00FDDEB0 /* AppDelegate.swift */,
 				52F7CFC71FDC1C3D00FDDEB0 /* Assets.xcassets */,
@@ -603,6 +606,7 @@
 				6E70BF381FDFE70E00048ED4 /* PlayfairDisplay-BlackItalic.ttf in Resources */,
 				6E70BF4F1FDFE71F00048ED4 /* NunitoSans-BlackItalic.ttf in Resources */,
 				6E70BF371FDFE70E00048ED4 /* PlayfairDisplay-Regular.ttf in Resources */,
+				52730C651FE022380029F27A /* rec.json in Resources */,
 				6E70BF521FDFE71F00048ED4 /* NunitoSans-SemiBold.ttf in Resources */,
 				52F7CFC81FDC1C3D00FDDEB0 /* Assets.xcassets in Resources */,
 				6E70BF4B1FDFE71F00048ED4 /* NunitoSans-SemiBoldItalic.ttf in Resources */,
@@ -801,7 +805,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KUTVKVRQ95;
+				DEVELOPMENT_TEAM = A4YW889C9G;
 				INFOPLIST_FILE = "$(SRCROOT)/recipe/Utilities/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -820,7 +824,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KUTVKVRQ95;
+				DEVELOPMENT_TEAM = A4YW889C9G;
 				INFOPLIST_FILE = "$(SRCROOT)/recipe/Utilities/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

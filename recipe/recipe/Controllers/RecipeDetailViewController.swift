@@ -30,8 +30,8 @@ class RecipeDetailViewController: UIViewController {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Sets header of the tableView
+        tableHeaderView.fill(with: recipe)
         tableView.tableHeaderView = tableHeaderView
     }
 }
@@ -111,8 +111,8 @@ extension RecipeDetailViewController: UITableViewDataSource, UITableViewDelegate
             headerLabel.font = UIFont(name: "PlayFairDisplay-Regular", size: 24.0)
             headerLabel.text = "Preparation"
             headerLabel.textAlignment = .center
-            headerLabel.backgroundColor = UIColor(red: 252.0/255.0, green: 252.0/255.0, blue: 252.0/255.0, alpha: 1.0)
-            
+            headerLabel.backgroundColor = .white
+
             return headerLabel
         }
         

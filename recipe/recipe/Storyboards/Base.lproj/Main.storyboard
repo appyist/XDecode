@@ -6,6 +6,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,7 +53,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="172" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dummy Recipe1" translatesAutoresizingMaskIntoConstraints="NO" id="qAk-aP-U25">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dummy Recipe1" translatesAutoresizingMaskIntoConstraints="NO" id="qAk-aP-U25">
                                                     <rect key="frame" x="0.0" y="0.0" width="172" height="135"/>
                                                     <color key="backgroundColor" white="0.89804687500000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -92,7 +93,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="amy-qn-Aah" userLabel="ImageView Container" customClass="DesignableView" customModule="recipe" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="8" width="139" height="139"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dummy Recipe2" translatesAutoresizingMaskIntoConstraints="NO" id="whC-IX-0Sj" customClass="DesignableImageView" customModule="recipe" customModuleProvider="target">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dummy Recipe2" translatesAutoresizingMaskIntoConstraints="NO" id="whC-IX-0Sj" customClass="DesignableImageView" customModule="recipe" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="139" height="139"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -136,7 +137,7 @@
                                                     <color key="textColor" red="0.90588235294117647" green="0.29803921568627451" blue="0.51764705882352935" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alarm-clock" translatesAutoresizingMaskIntoConstraints="NO" id="yow-YP-BG9">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alarm-clock" translatesAutoresizingMaskIntoConstraints="NO" id="yow-YP-BG9">
                                                     <rect key="frame" x="163" y="115" width="20" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="20" id="7Qt-CI-k3R"/>
@@ -267,24 +268,42 @@
             </objects>
             <point key="canvasLocation" x="815.20000000000005" y="132.68365817091455"/>
         </scene>
-        <!--Recipe Detail View Controller-->
+        <!--Recipe-->
         <scene sceneID="sBs-nG-ix9">
             <objects>
                 <viewController id="zBs-Fl-t3d" customClass="RecipeDetailViewController" customModule="recipe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Mn-ai-hhS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="750"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fXS-ns-l5Z">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="750"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="AF7-jr-h2C" customClass="TableHeaderView" customModule="recipe" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="PSK-3F-Ee6">
+                                    <rect key="frame" x="0.0" y="633" width="375" height="120"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Enjoy" translatesAutoresizingMaskIntoConstraints="NO" id="KUi-2t-3lT">
+                                            <rect key="frame" x="132.5" y="20" width="110" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="bht-oJ-7qG"/>
+                                                <constraint firstAttribute="width" constant="110" id="neT-AN-qVW"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="KUi-2t-3lT" firstAttribute="centerY" secondItem="PSK-3F-Ee6" secondAttribute="centerY" id="6OY-PR-mIG"/>
+                                        <constraint firstItem="KUi-2t-3lT" firstAttribute="centerX" secondItem="PSK-3F-Ee6" secondAttribute="centerX" id="rzO-jd-Gix"/>
+                                    </constraints>
+                                </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IngredientCell" rowHeight="45" id="Xti-Tt-Djf" customClass="IngredientTableViewCell" customModule="recipe" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="IngredientCell" rowHeight="45" id="Xti-Tt-Djf" customClass="IngredientTableViewCell" customModule="recipe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="528" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xti-Tt-Djf" id="gWL-CM-aX2">
@@ -317,7 +336,7 @@
                                             <outlet property="quantityUnitLabel" destination="qAz-hn-9x1" id="Ctt-28-lqg"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DirectiveCell" rowHeight="60" id="GvE-su-9cR" customClass="DirectiveTableViewCell" customModule="recipe" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DirectiveCell" rowHeight="60" id="GvE-su-9cR" customClass="DirectiveTableViewCell" customModule="recipe" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="573" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GvE-su-9cR" id="ZOA-iH-e4R">
@@ -369,7 +388,6 @@
                                                 <constraint firstItem="kz3-tZ-WVJ" firstAttribute="top" secondItem="2jP-kh-LUa" secondAttribute="top" id="plM-cI-ll2"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
                                             <outlet property="descriptionLabel" destination="kz3-tZ-WVJ" id="pxJ-Es-mYa"/>
                                         </connections>
@@ -390,7 +408,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oUc-2g-z4S"/>
                     </view>
-                    <size key="freeformSize" width="375" height="750"/>
+                    <navigationItem key="navigationItem" title="Recipe" id="3Q9-Vt-2vc">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Item" image="heart" id="odT-Ab-ejM"/>
+                            <barButtonItem title="Item" image="spastiksey" id="5e2-Pr-krI"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="tableHeaderView" destination="AF7-jr-h2C" id="4dF-aG-i8D"/>
                         <outlet property="tableView" destination="fXS-ns-l5Z" id="Frk-dn-hmj"/>
@@ -398,7 +422,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3D-Jy-l7P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1679.2" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1679.2" y="132.23388305847078"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GQi-0J-mr7">
@@ -423,6 +447,9 @@
     <resources>
         <image name="Dummy Recipe1" width="180" height="180"/>
         <image name="Dummy Recipe2" width="140" height="140"/>
+        <image name="Enjoy" width="111" height="86"/>
         <image name="alarm-clock" width="39" height="40"/>
+        <image name="heart" width="20" height="19"/>
+        <image name="spastiksey" width="20" height="21"/>
     </resources>
 </document>

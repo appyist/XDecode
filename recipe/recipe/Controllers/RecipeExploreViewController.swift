@@ -27,19 +27,8 @@ class RecipeExploreViewController: UIViewController {
         let kind = UICollectionElementKindSectionHeader
         collectionView.register(CollectionHeaderView.self, forSupplementaryViewOfKind: kind, withReuseIdentifier: "CollectionHeader")
         collectionView.register(CollectionSectionHeaderView.self, forSupplementaryViewOfKind: kind, withReuseIdentifier: "SectionHeader")
-
-        let ing1 = Ingredient(description: "dneme11", quantity: 1112, unit: "mL")
-        let ing2 = Ingredient(description: "demndkugf", quantity: 32, unit: "kg")
-        let ing3 = Ingredient(description: "gjhkjlkşds dısg dsı", quantity: 32, unit: "ounces")
-        
-        
-        let tr1 = Recipe(id: "0", image: URL(string: "https://static.pexels.com/photos/70497/pexels-photo-70497.jpeg")!, name: "Alfredo patato with spinach", shortInfo: "", categories: ["Breakfast", "Appetizer"], servings: 10, cookTime: 8, difficulty: .easy, ingredients: [ing1, ing2, ing3], directives: ["lorem al ipsum ver", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud lorem al ipsum ver", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, q lorem al ipsum ver", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."])
-        let tr2 = Recipe(id: "1", image: URL(string: "https://drop.ndtv.com/albums/COOKS/corngallery/creolespicedcornthumb_640x480.jpg")!, name: "Coffee gronola row fruit", shortInfo: "", categories: ["Dinner", "Lunch"], servings: 10, cookTime: 3, difficulty: .easy, ingredients: [], directives: [])
-        let tr3 = Recipe(id: "2", image: URL(string: "https://media2.s-nbcnews.com/j/newscms/2017_10/1200234/10-healthy-fast-food-meals-008-subway-inline-today-170309_89a32509f1b93e969a831a913cc2a2d1.today-inline-large.jpg")!, name: "Berry berry strawberry pie", shortInfo: "", categories: [], servings: 10, cookTime: 5, difficulty: .easy, ingredients: [], directives: [])
-        let tr4 = Recipe(id: "3", image: URL(string: "https://www.colourbox.com/preview/2226606-salad-with-vegetables-and-greens.jpg")!, name: "A simple toast with eggs", shortInfo: "", categories: [], servings: 10, cookTime: 20, difficulty: .medium, ingredients: [], directives: [])
-        
-        trendingRecipies = [tr1, tr2, tr3, tr4]
-        recentRecepies = [tr1, tr2]
+        trendingRecipies = Recipe.readTrending()
+        recentRecepies = Recipe.readRecent()
     }
     
     // MARK: - Functions
@@ -53,7 +42,7 @@ class RecipeExploreViewController: UIViewController {
     
     func dataSource(forSection section: Int) -> [Recipe] {
         // Returns 'trendingRecipies' if section is 0, else 'recentRecepies'
-        return section == 0 ? trendingRecipies : trendingRecipies
+        return section == 1 ? trendingRecipies : recentRecepies
     }
 }
 

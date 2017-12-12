@@ -38,46 +38,46 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A cream pie is a type of pie or cake filled with a rich custard or pudding that is made from milk, cream, flour, and eggs." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4S-f6-s4l">
-                    <rect key="frame" x="10" y="320" width="355" height="64"/>
+                    <rect key="frame" x="20" y="320" width="335" height="64"/>
                     <fontDescription key="fontDescription" name="PlayfairDisplay-Italic" family="Playfair Display" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alarm-clock" translatesAutoresizingMaskIntoConstraints="NO" id="7Ac-Jk-vEY">
-                    <rect key="frame" x="167.5" y="408" width="39" height="40"/>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alarm-clock" translatesAutoresizingMaskIntoConstraints="NO" id="7Ac-Jk-vEY">
+                    <rect key="frame" x="167" y="408" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="MeK-qE-goA"/>
-                        <constraint firstAttribute="width" constant="39" id="Q64-Os-ze5"/>
+                        <constraint firstAttribute="width" constant="40" id="Q64-Os-ze5"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="serve" translatesAutoresizingMaskIntoConstraints="NO" id="qKD-zW-Add">
-                    <rect key="frame" x="250.5" y="404" width="39" height="40"/>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="serve" translatesAutoresizingMaskIntoConstraints="NO" id="qKD-zW-Add">
+                    <rect key="frame" x="251" y="408" width="40" height="40"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="39" id="IT4-cS-mKg"/>
+                        <constraint firstAttribute="width" constant="40" id="IT4-cS-mKg"/>
                         <constraint firstAttribute="height" constant="40" id="LIC-wy-QA9"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chief" translatesAutoresizingMaskIntoConstraints="NO" id="bK0-mX-mMb">
-                    <rect key="frame" x="89" y="408" width="39" height="40"/>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chief" translatesAutoresizingMaskIntoConstraints="NO" id="bK0-mX-mMb">
+                    <rect key="frame" x="87.5" y="408" width="40" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="7Ln-2C-yoc"/>
-                        <constraint firstAttribute="width" constant="39" id="EhR-SE-NDV"/>
+                        <constraint firstAttribute="width" constant="40" id="EhR-SE-NDV"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Easy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUc-dX-tnB">
-                    <rect key="frame" x="92" y="453" width="29.5" height="17.5"/>
+                    <rect key="frame" x="93" y="453" width="29.5" height="17.5"/>
                     <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="14"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40 min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4M-aD-8h6">
-                    <rect key="frame" x="166.5" y="453" width="43.5" height="17.5"/>
+                    <rect key="frame" x="165.5" y="453" width="43.5" height="17.5"/>
                     <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="14"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8 Serves" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93z-2Q-EZr">
-                    <rect key="frame" x="242" y="452" width="53" height="17.5"/>
+                    <rect key="frame" x="244.5" y="456" width="53" height="17.5"/>
                     <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="14"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -85,24 +85,24 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="bK0-mX-mMb" firstAttribute="top" secondItem="h4S-f6-s4l" secondAttribute="bottom" constant="24" id="4VM-Zt-TjP"/>
+                <constraint firstItem="X4M-aD-8h6" firstAttribute="centerX" secondItem="7Ac-Jk-vEY" secondAttribute="centerX" id="0TS-BF-n4O"/>
+                <constraint firstItem="bK0-mX-mMb" firstAttribute="centerY" secondItem="7Ac-Jk-vEY" secondAttribute="centerY" id="1mQ-D4-2ii"/>
                 <constraint firstItem="X4M-aD-8h6" firstAttribute="top" secondItem="7Ac-Jk-vEY" secondAttribute="bottom" constant="5" id="79C-IP-uyR"/>
                 <constraint firstItem="93z-2Q-EZr" firstAttribute="top" secondItem="qKD-zW-Add" secondAttribute="bottom" constant="8" id="7Pi-Xu-WbV"/>
-                <constraint firstAttribute="trailing" secondItem="h4S-f6-s4l" secondAttribute="trailing" constant="10" id="903-dQ-4aN"/>
-                <constraint firstItem="X4M-aD-8h6" firstAttribute="leading" secondItem="xUc-dX-tnB" secondAttribute="trailing" constant="45" id="BJm-bp-1nd"/>
+                <constraint firstAttribute="trailing" secondItem="h4S-f6-s4l" secondAttribute="trailing" constant="20" id="903-dQ-4aN"/>
                 <constraint firstItem="7Ac-Jk-vEY" firstAttribute="centerX" secondItem="M98-wa-hcE" secondAttribute="centerX" id="In8-ew-1c4"/>
-                <constraint firstItem="93z-2Q-EZr" firstAttribute="leading" secondItem="X4M-aD-8h6" secondAttribute="trailing" constant="32" id="OrV-cW-9ad"/>
-                <constraint firstItem="qKD-zW-Add" firstAttribute="top" secondItem="h4S-f6-s4l" secondAttribute="bottom" constant="20" id="TAX-cL-EGg"/>
                 <constraint firstItem="fbG-YD-Tvr" firstAttribute="trailing" secondItem="F0d-f6-UY1" secondAttribute="trailing" id="Ut3-Rd-7Lp"/>
                 <constraint firstItem="F0d-f6-UY1" firstAttribute="leading" secondItem="fbG-YD-Tvr" secondAttribute="leading" id="UyW-VA-ERD"/>
                 <constraint firstItem="F0d-f6-UY1" firstAttribute="top" secondItem="fbG-YD-Tvr" secondAttribute="top" constant="-20" id="ake-zv-Dcg"/>
-                <constraint firstItem="X4M-aD-8h6" firstAttribute="centerX" secondItem="M98-wa-hcE" secondAttribute="centerX" id="fX8-Jw-3Tl"/>
+                <constraint firstItem="qKD-zW-Add" firstAttribute="centerY" secondItem="7Ac-Jk-vEY" secondAttribute="centerY" id="dTf-ka-ggA"/>
                 <constraint firstItem="qKD-zW-Add" firstAttribute="leading" secondItem="7Ac-Jk-vEY" secondAttribute="trailing" constant="44" id="g9s-bW-yns"/>
                 <constraint firstItem="xUc-dX-tnB" firstAttribute="top" secondItem="bK0-mX-mMb" secondAttribute="bottom" constant="5" id="i5v-bu-b1G"/>
-                <constraint firstItem="h4S-f6-s4l" firstAttribute="leading" secondItem="fbG-YD-Tvr" secondAttribute="leading" constant="10" id="ldr-DG-Bqe"/>
+                <constraint firstItem="h4S-f6-s4l" firstAttribute="leading" secondItem="fbG-YD-Tvr" secondAttribute="leading" constant="20" id="ldr-DG-Bqe"/>
                 <constraint firstItem="7Ac-Jk-vEY" firstAttribute="leading" secondItem="bK0-mX-mMb" secondAttribute="trailing" constant="40" id="na5-jP-gNe"/>
                 <constraint firstItem="7Ac-Jk-vEY" firstAttribute="top" secondItem="h4S-f6-s4l" secondAttribute="bottom" constant="24" id="naR-qI-bS0"/>
                 <constraint firstItem="h4S-f6-s4l" firstAttribute="top" secondItem="F0d-f6-UY1" secondAttribute="bottom" constant="20" id="qff-Ls-W5v"/>
+                <constraint firstItem="xUc-dX-tnB" firstAttribute="centerX" secondItem="bK0-mX-mMb" secondAttribute="centerX" id="wew-n6-tBa"/>
+                <constraint firstItem="93z-2Q-EZr" firstAttribute="centerX" secondItem="qKD-zW-Add" secondAttribute="centerX" id="whN-Nu-nzN"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fbG-YD-Tvr"/>

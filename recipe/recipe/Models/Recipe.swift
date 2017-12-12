@@ -30,4 +30,19 @@ struct Recipe: Codable {
     enum CodingKeys: String, CodingKey {
         case id, image, name, shortInfo, categories, servings, cookTime, difficulty, ingredients, directives
     }
+    
+    static func readTrending() -> [Recipe] {
+        return Array(Recipe.read().prefix(4))
+    }
+    
+    static func readRecent() -> [Recipe] {
+        return Array(Recipe.read().suffix(4))
+    }
+    
+    private static func read() -> [Recipe] {
+        let path = Bundle.main.path(forResource: "rec", ofType: "json")
+        let text = try! String(contentsOfFile: path!)
+        let data = text.data(using: .utf8)!
+        return try! JSONDecoder().decode([Recipe].self, from: data)
+    }
 }
