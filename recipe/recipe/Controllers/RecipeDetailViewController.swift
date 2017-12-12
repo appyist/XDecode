@@ -12,6 +12,7 @@ class RecipeDetailViewController: UIViewController {
     
     // MARK: - UI Elements
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var tableHeaderView: TableHeaderView!
     
     // MARK: - Variables
     var recipe: Recipe!
@@ -29,6 +30,9 @@ class RecipeDetailViewController: UIViewController {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Sets header of the tableView
+        tableView.tableHeaderView = tableHeaderView
     }
 }
 

@@ -278,9 +278,14 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fXS-ns-l5Z">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="AF7-jr-h2C" customClass="TableHeaderView" customModule="recipe" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="IngredientCell" rowHeight="45" id="Xti-Tt-Djf" customClass="IngredientTableViewCell" customModule="recipe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="45"/>
+                                        <rect key="frame" x="0.0" y="528" width="375" height="45"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xti-Tt-Djf" id="gWL-CM-aX2">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
@@ -313,7 +318,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DirectiveCell" rowHeight="60" id="GvE-su-9cR" customClass="DirectiveTableViewCell" customModule="recipe" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="73" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="573" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GvE-su-9cR" id="ZOA-iH-e4R">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
@@ -321,7 +326,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preheat oven to 450F / 230C." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kz3-tZ-WVJ">
                                                     <rect key="frame" x="50" y="0.0" width="182.5" height="19.5"/>
-                                                    <fontDescription key="fontDescription" name="NunitoSans-Light" family="Nunito Sans" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="NunitoSans-Light" family="Nunito Sans" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -386,6 +391,7 @@
                         <viewLayoutGuide key="safeArea" id="oUc-2g-z4S"/>
                     </view>
                     <connections>
+                        <outlet property="tableHeaderView" destination="AF7-jr-h2C" id="4dF-aG-i8D"/>
                         <outlet property="tableView" destination="fXS-ns-l5Z" id="Frk-dn-hmj"/>
                     </connections>
                 </viewController>
@@ -416,6 +422,6 @@
     <resources>
         <image name="Dummy Recipe1" width="180" height="180"/>
         <image name="Dummy Recipe2" width="140" height="140"/>
-        <image name="alarm-clock" width="20" height="21"/>
+        <image name="alarm-clock" width="39" height="40"/>
     </resources>
 </document>

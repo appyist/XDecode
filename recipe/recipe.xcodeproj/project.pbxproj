@@ -231,8 +231,8 @@
 		52422F181FDFE8760088097D /* TableView Header */ = {
 			isa = PBXGroup;
 			children = (
-				52422F191FDFE89C0088097D /* TableHeaderView.xib */,
 				52730C491FDFF87D0029F27A /* TableHeaderView.swift */,
+				52422F191FDFE89C0088097D /* TableHeaderView.xib */,
 			);
 			path = "TableView Header";
 			sourceTree = "<group>";
@@ -801,11 +801,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A4YW889C9G;
+				DEVELOPMENT_TEAM = KUTVKVRQ95;
 				INFOPLIST_FILE = "$(SRCROOT)/recipe/Utilities/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ist.appy.recipe;
+				PRODUCT_BUNDLE_IDENTIFIER = ist.appy.recip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -820,11 +820,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A4YW889C9G;
+				DEVELOPMENT_TEAM = KUTVKVRQ95;
 				INFOPLIST_FILE = "$(SRCROOT)/recipe/Utilities/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ist.appy.recipe;
+				PRODUCT_BUNDLE_IDENTIFIER = ist.appy.recip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;

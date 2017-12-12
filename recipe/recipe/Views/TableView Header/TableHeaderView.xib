@@ -17,9 +17,17 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableHeaderView" customModule="recipe" customModuleProvider="target">
+            <connections>
+                <outlet property="cookTimeLabel" destination="X4M-aD-8h6" id="rLc-Bb-T78"/>
+                <outlet property="difficultyLabel" destination="xUc-dX-tnB" id="0bd-dQ-COJ"/>
+                <outlet property="imageView" destination="F0d-f6-UY1" id="8Ma-h1-U7b"/>
+                <outlet property="servingsLabel" destination="93z-2Q-EZr" id="FTj-b0-KhW"/>
+                <outlet property="shortInfoLabel" destination="h4S-f6-s4l" id="4Cl-tR-4Ba"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="M98-wa-hcE" customClass="TableHeaderView" customModule="recipe" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="M98-wa-hcE" customClass="DesignableView" customModule="recipe" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -98,13 +106,6 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fbG-YD-Tvr"/>
-            <connections>
-                <outlet property="cookTimeLabel" destination="X4M-aD-8h6" id="ejY-X1-kRz"/>
-                <outlet property="difficultyLabel" destination="xUc-dX-tnB" id="GTS-2U-Lnt"/>
-                <outlet property="imageView" destination="F0d-f6-UY1" id="zsA-8a-Wke"/>
-                <outlet property="servingsLabel" destination="93z-2Q-EZr" id="TQw-nS-qzL"/>
-                <outlet property="shortInfoLabel" destination="h4S-f6-s4l" id="sdW-dc-Svl"/>
-            </connections>
             <point key="canvasLocation" x="15.5" y="26"/>
         </view>
     </objects>

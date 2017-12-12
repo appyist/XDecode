@@ -9,7 +9,7 @@
 import UIKit
 import Kingfisher
 
-class TableHeaderView: UIView, XibLoadable {
+class TableHeaderView: DesignableView, XibLoadable {
     
     // MARK: - UI Elements
     @IBOutlet weak var shortInfoLabel: UILabel!
