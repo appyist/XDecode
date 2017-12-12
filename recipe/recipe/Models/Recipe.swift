@@ -9,15 +9,17 @@
 import Foundation
 
 struct Recipe: Codable {
-    enum Difficulty: Int, Codable {
-        case easy
-        case medium
-        case hard
+    
+    enum Difficulty: String, Codable {
+        case easy = "Easy"
+        case medium = "Medium"
+        case hard = "Hard"
     }
     
     var id: String
     var image: URL
     var name: String
+    var shortInfo: String
     var categories: [String]
     var servings: Int
     var cookTime: Int
@@ -26,6 +28,6 @@ struct Recipe: Codable {
     var directives: [String]
     
     enum CodingKeys: String, CodingKey {
-        case id, image, name, categories, servings, cookTime, difficulty, ingredients, directives
+        case id, image, name, shortInfo, categories, servings, cookTime, difficulty, ingredients, directives
     }
 }

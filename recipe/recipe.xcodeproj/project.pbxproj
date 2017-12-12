@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		52422F1A1FDFE89C0088097D /* TableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52422F191FDFE89C0088097D /* TableHeaderView.xib */; };
+		52730C4A1FDFF87D0029F27A /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52730C491FDFF87D0029F27A /* TableHeaderView.swift */; };
 		52F7CFC11FDC1C3D00FDDEB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7CFC01FDC1C3D00FDDEB0 /* AppDelegate.swift */; };
 		52F7CFC61FDC1C3D00FDDEB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F7CFC41FDC1C3D00FDDEB0 /* Main.storyboard */; };
 		52F7CFC81FDC1C3D00FDDEB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F7CFC71FDC1C3D00FDDEB0 /* Assets.xcassets */; };
@@ -169,6 +170,7 @@
 
 /* Begin PBXFileReference section */
 		52422F191FDFE89C0088097D /* TableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeaderView.xib; sourceTree = "<group>"; };
+		52730C491FDFF87D0029F27A /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
 		52F7CFBD1FDC1C3D00FDDEB0 /* recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F7CFC01FDC1C3D00FDDEB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52F7CFC51FDC1C3D00FDDEB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				52422F191FDFE89C0088097D /* TableHeaderView.xib */,
+				52730C491FDFF87D0029F27A /* TableHeaderView.swift */,
 			);
 			path = "TableView Header";
 			sourceTree = "<group>";
@@ -631,6 +634,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52730C4A1FDFF87D0029F27A /* TableHeaderView.swift in Sources */,
 				6E82BD3F1FDD962100B8A417 /* RecipeExploreViewController.swift in Sources */,
 				6E82BD811FDEC04500B8A417 /* CollectionHeaderView.swift in Sources */,
 				6E82BD3B1FDD91EC00B8A417 /* DesignableView.swift in Sources */,
