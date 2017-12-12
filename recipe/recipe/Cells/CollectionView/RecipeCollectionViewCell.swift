@@ -19,11 +19,19 @@ class RecipeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var categoryLabel: UILabel?
     @IBOutlet weak var duratiLabel: UILabel?
     
-    // MARK: - Variables
-    
-    /// Identifier that is used by collectionView to create a cell from this type.
-    class var identifier: String {
-        return "RecipeCollectionViewCell"
+    // MARK: - Life Cycle
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        // Rounds the corners
+        contentView.layer.cornerRadius = 2.0
+        contentView.layer.masksToBounds = true
+        
+        // Drops shadow
+        layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        layer.shadowRadius = 10.0
+        layer.shadowOpacity = 0.1
+        layer.masksToBounds = false
     }
     
     // MARK: - Functions
@@ -40,7 +48,7 @@ class RecipeCollectionViewCell: UICollectionViewCell {
         categoryLabel?.text = categoryText
         
         // Sets the duration
-        let durationText = "Under \(recipe.cookTime)"
+        let durationText = "Under \(recipe.cookTime) min."
         duratiLabel?.text = durationText
     }
 }
