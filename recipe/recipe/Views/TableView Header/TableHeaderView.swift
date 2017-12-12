@@ -12,11 +12,6 @@ import Kingfisher
 class TableHeaderView: DesignableView, XibLoadable {
     
     // MARK: - UI Elements
-    @IBOutlet weak var shortInfoLabel: UILabel!
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var difficultyLabel: UILabel!
-    @IBOutlet weak var cookTimeLabel: UILabel!
-    @IBOutlet weak var servingsLabel: UILabel!
     
     // MARK: - Life Cycle
     override init(frame: CGRect) {
@@ -34,10 +29,6 @@ class TableHeaderView: DesignableView, XibLoadable {
     }
     
     func fill(with recipe: Recipe) {
-        shortInfoLabel.text = recipe.shortInfo
-        imageView.kf.setImage(with: recipe.image, options: [.transition(.fade(0.2))])
-        difficultyLabel.text = recipe.difficulty.rawValue
-        cookTimeLabel.text = "\(recipe.cookTime) min"
-        servingsLabel.text = "\(recipe.servings) serves"
+
     }
 }

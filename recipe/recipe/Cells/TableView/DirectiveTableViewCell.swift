@@ -11,11 +11,8 @@ import UIKit
 class DirectiveTableViewCell: UITableViewCell {
 
     // MARK: - UI Elements
-    @IBOutlet weak var descriptionLabel: UILabel!
     
     // MARK: - Functions
     func fill(with directive: String) {
-        // Sets the text of descriptionLabel with given string
-        descriptionLabel.text = directive
     }
 }

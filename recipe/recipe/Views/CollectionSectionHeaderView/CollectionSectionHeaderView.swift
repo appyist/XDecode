@@ -11,7 +11,6 @@ import UIKit
 class CollectionSectionHeaderView: UICollectionReusableView, XibLoadable {
 
     // MARK: - UI Elements
-    @IBOutlet weak var titleLabel: UILabel!
     
     // MARK: - Life Cycle
     override init(frame: CGRect) {
@@ -30,7 +29,6 @@ class CollectionSectionHeaderView: UICollectionReusableView, XibLoadable {
     
     // MARK: - Functions
     func fill(title: String?) {
-        // Sets the title of header if avaible.
-        titleLabel.text = title
+
     }
 }
